@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Pagina</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <style>
+        /* Estilos CSS para la tabla, los encabezados de la tabla (th) y las celdas de la tabla (td) */
+        table, th, td {
+            border: 1px solid black; /* Define un borde negro para la tabla, encabezados y celdas */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido</h1> <!-- Encabezado principal de la página -->
+
+    <!-- Primer formulario que envía datos al servidor mediante el método POST -->
+    <form action="/formulario" method="post"> 
+        <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de texto del nombre -->
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/> <!-- Campo de texto para ingresar el nombre -->
+    </form>
+    <br>
+
+    <!-- Segundo formulario (sin acción definida) -->
+    <form> 
+        <label for="apellido">Apellido:</label> <!-- Etiqueta para el campo de texto del apellido -->
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido"/> <!-- Campo de texto para ingresar el apellido -->
+    </form>
+    
+    <!-- Lista ordenada (numerada) -->
+    <ol>
+        <li>Elemento 1</li> <!-- Primer elemento de la lista ordenada -->
+        <li>Elemento 2</li> <!-- Segundo elemento de la lista ordenada -->
+        <li>Elemento 3</li> <!-- Tercer elemento de la lista ordenada -->
+    </ol>
+
+    <!-- Tabla con datos sobre productos y precios -->
+    <table style="width: 500px"> <!-- La tabla tiene un ancho de 500px -->
+        <tr>
+            <th>Producto</th> <!-- Encabezado de columna para los productos -->
+            <th>Precio</th> <!-- Encabezado de columna para los precios -->
+        </tr>
+        <tr>
+            <td>Contenido</td> <!-- Celda con el texto "Contenido" -->
+            <td>Gratis</td> <!-- Celda con el texto "Gratis" -->
+        </tr>
+        <tr>
+            <td>Almuerzo</td> <!-- Celda con el texto "Almuerzo" -->
+            <td>3.00$</td> <!-- Celda con el precio "3.00$" -->
+        </tr>
+    </table>
+    <br>
+
+    <label for="comentario">Comentario:</label> <!-- Etiqueta para el área de texto -->
+    <br>
+    <!-- Área de texto para ingresar comentarios -->
+    <textarea cols="50" rows="10" id="comentario" placeholder="Ingrese Un Comentario" name="comentario"></textarea>
+    <br>
+
+    <!-- Botones: el primero es solo un botón (sin acción de envío) y el segundo restablece los campos del formulario -->
+    <button type="button">Enviar</button>
+    <button type="reset">Borrar</button>
+    
+    <!-- Encabezados y texto -->
+    <h2>Mi Primera Pagina</h2> <!-- Encabezado de nivel 2 -->
+    <p>Hola este es mi primer <span style="color: crimson;">web hecho con html.</span></p> <!-- Párrafo con texto estilizado en color crimson -->
+    
+    <!-- Enlace a un video de YouTube -->
+    <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk">Ir YouTube</a> 
+    <hr> <!-- Línea horizontal -->
+    
+    <!-- Imagen con dimensiones definidas -->
+    <img src="images2.jpg" height="400" width="400"> 
+</body>
+</html>
