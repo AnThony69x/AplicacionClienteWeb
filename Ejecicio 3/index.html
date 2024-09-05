@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Declaración del tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Configura la ventana gráfica para que sea adaptable a diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>Formulario de prueba de HTML5</title>
+</head>
+<body>
+
+    <!-- Inicio del formulario, método GET -->
+    <form action="" method="get">
+        
+        <!-- Campo de texto para ingresar el nombre, con autofocus y requerido -->
+        <p>
+            Nombre: <input type="text" name="name_control" autofocus required />
+        </p>
+
+        <!-- Campo de texto para ingresar el correo electrónico, debe cumplir el formato de email -->
+        <p>
+            Correo electrónico: <input type="email" name="email_control" required />
+        </p>
+
+        <!-- Campo para ingresar una URL, con texto de ayuda en el placeholder -->
+        <p>
+            URL: <input type="url" name="url_control" placeholder="Escribe la URL de tu página web personal" />
+        </p>
+
+        <!-- Campo de selección de fecha en formato calendario -->
+        <p>
+            Fecha: <input type="date" name="date_control" />
+        </p>
+
+        <!-- Campo de selección de hora -->
+        <p>
+            Tiempo: <input type="time" name="time_control" />
+        </p>
+
+        <!-- Campo para seleccionar tanto la fecha como la hora (esta etiqueta debería ser 'datetime-local') -->
+        <p>
+            Fecha y hora: <input type="datetime" name="datetime_control" />
+        </p>
+
+        <!-- Campo para seleccionar un mes (formato año y mes) -->
+        <p>
+            Mes: <input type="month" name="month_control" />
+        </p>
+
+        <!-- Campo para seleccionar una semana específica del año -->
+        <p>
+            Semana: <input type="week" name="week_control" />
+        </p>
+
+        <!-- Campo numérico, con valores mínimo y máximo, y valor predeterminado en 0 -->
+        <p>
+            Número (min -10, max 10): <input type="number" name="number_control" min="-10" max="10" value="0" />
+        </p>
+
+        <!-- Campo para ingresar un número de teléfono -->
+        <p>
+            Teléfono: <input type="tel" name="tel_control" />
+        </p>
+
+        <!-- Campo de búsqueda (input de texto con características específicas de búsqueda) -->
+        <p>
+            Término de búsqueda: <input type="search" name="search_control" />
+        </p>
+
+        <!-- Selector de color, abre una paleta para elegir un color -->
+        <p>
+            Color favorito: <input type="color" name="color_control" />
+        </p>
+
+        <!-- Botón para enviar el formulario -->
+        <p>
+            <input type="submit" value="Enviar" />
+        </p>
+
+        <!-- Botón para borrar el formulario, con un evento onclick para ejecutar una función en JavaScript -->
+        <p>
+            <input type="submit" id="clearButton" value="Borrar" onclick="clearForm()"/>
+        </p>
+    </form>
+
+    <!-- JavaScript que debe estar presente para limpiar el formulario, función aún no definida -->
+    <script>
+        function clearForm() {
+            document.getElementById("clearButton").reset();
+        }
+    </script>
+
+</body>
+</html>
