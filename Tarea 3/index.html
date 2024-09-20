@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Especifica el conjunto de caracteres como UTF-8 para admitir caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Optimiza la visualización en dispositivos móviles -->
+    <title>Registro de Cliente</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos externa -->
+</head>
+<body>
+    <h1>Registro de Cliente</h1> <!-- Encabezado principal de la página -->
+
+    <div class="formulario">
+        <form action="" id="formularioCliente" method="get"> <!-- Formulario para capturar los datos del cliente -->
+            <!-- Campo para la cédula del cliente -->
+            <div class="campo">
+                <label for="cedula">Cédula:</label>
+                <input type="text" name="Cedula" id="cedula" required> <!-- Campo obligatorio -->
+            </div>
+
+            <!-- Campo para el apellido -->
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="Apellido" id="apellido" required> <!-- Campo obligatorio -->
+            </div>
+
+            <!-- Campo para el nombre -->
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="nombre" required> <!-- Campo obligatorio -->
+            </div>
+
+            <!-- Campo para la dirección -->
+            <div class="campo">
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="Direccion" id="direccion" required> <!-- Campo obligatorio -->
+            </div>
+
+            <!-- Campo para el teléfono -->
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" name="Telefono" id="telefono" required> <!-- Campo obligatorio -->
+            </div>
+
+            <!-- Campo para el email, con validación automática de formato -->
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" name="E-mail" id="email" required> <!-- Campo obligatorio con formato específico -->
+            </div>
+
+            <!-- Desplegable para seleccionar la ciudad -->
+            <div class="campo">
+                <label for="ciudad">Ciudad:</label>
+                <select name="Ciudad" id="ciudad" required> <!-- Campo obligatorio, con varias opciones de ciudad -->
+                    <option value="" disabled selected>Seleccione una ciudad</option> <!-- Opción por defecto no seleccionable -->
+                    <option value="Loja">Loja</option>
+                    <option value="Quito">Quito</option>
+                    <option value="Guayaquil">Guayaquil</option>
+                    <option value="Cuenca">Cuenca</option>
+                    <option value="Ambato">Ambato</option>
+                    <option value="Manta">Manta</option>
+                </select>
+            </div>
+
+            <!-- Botón de enviar -->
+            <div class="enviar">
+                <input type="submit" value="Enviar" id="enviar"> <!-- Envío del formulario -->
+            </div>
+        </form>
+    </div>
+
+    <p id="mensaje"></p> <!-- Contenedor para mostrar un mensaje dinámico -->
+
+    <footer>
+        <div class="container">
+            <p>Hecho por Anthony Mejia <3</p> <!-- Pie de página con la firma del autor -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript externo -->
+</body>
+</html>
