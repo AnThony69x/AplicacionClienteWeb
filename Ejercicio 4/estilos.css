@@ -1,24 +1,31 @@
 body {
-    color: #00F; background-color: #CFC; font-family: Georgia, Cambria, serif; font-size: 16px;
-    }
-    
-    h1 {
-    color: #F00; font-family: Verdana, Calibri, sans-serif; font-size: 32px;
-    }
-    
-    h2 {
-    color: #A00; font-family: Verdana, Calibri, sans-serif; font-size: 24px;
-    }
-    
-    span {
-    color: #060;
-    }
-    
-    strong {
-    font-size: 20px;
-    }
-    
-    em {
-    color: #FFF; background-color: #000;
-    }
-    
+    color: #00F; /* El texto del cuerpo será azul */
+    background-color: #CFC; /* El fondo del cuerpo será verde claro */
+    font-family: Georgia, Cambria, serif; /* Fuentes serif utilizadas en el cuerpo */
+    font-size: 16px; /* Tamaño de letra del cuerpo */
+}
+
+h1 {
+    color: #F00; /* Color rojo para el texto del título h1 */
+    font-family: Verdana, Calibri, sans-serif; /* Fuentes sans-serif para el título h1 */
+    font-size: 32px; /* Tamaño de letra grande para el h1 */
+}
+
+h2 {
+    color: #A00; /* Color rojo oscuro para el título h2 */
+    font-family: Verdana, Calibri, sans-serif; /* Fuentes sans-serif para el h2 */
+    font-size: 24px; /* Tamaño de letra mediano para el h2 */
+}
+
+span {
+    color: #060; /* El texto en span será verde oscuro */
+}
+
+strong {
+    font-size: 20px; /* Texto en negrita será más grande (20px) */
+}
+
+em {
+    color: #FFF; /* Texto en cursiva será blanco */
+    background-color: #000; /* Fondo negro para texto en cursiva */
+}
